@@ -1,9 +1,144 @@
-/*Css Stlyle Sheet add colour*/
+/*  ---------------Box Sizing-----------------  */
 
-/* Global Style */
-
-
-
-body{
-    background-color: blanchedalmond;
-}
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*  ---------------Responsive Images-----------------  */
+  
+  img{
+    max-width:100%;
+  }
+  
+  /*  ---------------Utility Classes-----------------  */
+  
+  .container{
+    width: 80vw;
+    max-width:960px;
+    margin: 40px auto; 
+  }
+  
+  /*  ---------------Global Styles-----------------  */
+  body {
+    font-family: "Gabarito", sans-serif;
+    margin:0; 
+  }
+  
+  header.primary {
+  background-color: #3b638b;
+  color:#ffffff;
+  text-shadow: 1px 1px #000000; 
+  /*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;  
+  /*Single value short hand*/
+  padding: 40px;
+  /* T,R,B,L */
+  padding: 20px 40px 20px 40px; 
+  /* Two Value Top/Bottom / L/R */
+  padding: 20px 40px;
+  text-align:center;  
+  }
+  
+  header.primary h1{
+    font-size: 2.4rem;
+    margin:20px 0 0;
+  }
+  
+  header.primary h1 a {
+    color:#ffffff;
+    text-decoration:none;
+  }
+  
+  header.primary h2{
+    font-size:1.4rem;
+    margin:0;
+  }
+  
+  nav.primary{
+    max-width:960px;
+    margin:auto;
+  }
+  nav.primary ul{
+    padding:10px 0 0 0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+  }
+  nav.primary ul li{
+    list-style-type:none;
+  }
+  nav.primary ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  border: 1px solid #c0c0c0;
+  padding: 7.5px 10px;
+  border-radius:20px; 
+  background-color: rgba(0,0,0,.4);
+  transition: .4s;  
+  }
+  
+  nav.primary ul li a:hover{
+    background-color: rgba(0,0,0,.8);
+  }
+  
+  #intro {
+    line-height:1.6;
+  }
+  
+  #intro h2{
+    color: #3b638b;
+    border-bottom: 1px dotted grey;
+  }
+  
+  #content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:2rem;
+  }
+  
+  #content article.post{
+    box-shadow: 0 4px 8px rgba(0,0,0,.6);
+    padding:10px;
+    border-radius:4px;
+    font-size:.8rem;
+  }
+  
+  time.post-date, figcaption{
+    text-transform:uppercase;
+    color:#ccc;
+  }
+  
+  #content a {
+    color: #3b638b;
+  }
+  
+  #content article.post figure{
+    margin:0;
+  }
+  
+  
+  /* --------- Media Queries ----------- */
+  
+  @media screen and (max-width:600px){
+    
+  nav.primary ul{
+    flex-direction:column;
+    gap:10px;
+    max-width: 250px;
+    margin:10px auto;
+  } 
+  
+    nav.primary ul a{
+      display:block;
+    }  
+    
+  }
