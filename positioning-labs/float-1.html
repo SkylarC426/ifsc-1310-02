@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Positioning Lab</title>
   <style type="text/css">
-    /* ---------------Box Sizing----------------- */
     html {
       box-sizing: border-box;
     }
@@ -28,34 +27,39 @@
       background-color: #FFF;
       border: 1px solid #c0c0c0;
       width: 800px;
-      margin-right: auto;
-      margin-left: auto;
+      margin: 0 auto;
       text-shadow: 2px 2px #000;
+    }
+    .row {
+      overflow: hidden;
+    }
+    .column {
+      width: 360px; 
+      height: 150px;
+      float: left;
+      margin: 15px; 
     }
     #navy {
       background-color: #001f3f;
-	  width: 370px;
-	  height: 125px;
-	  float: right;
     }
     #teal {
       background-color: #39CCCC;
-	  width: 370px;
-	  height: 125px;
+      float: right;
     }
     #blue {
       background-color: #0074D9;
-	  width: 370px;
-	  height: 125px;
     }
     #aqua {
       background-color: #7FDBFF;
-	  width: 370px;
-	  height: 125px;
-	  float: right;
+      float: right;
     }
     #footer {
       background-color: #666;
+      clear: both;
+      height: 25px;
+      line-height: 25px;
+      color: #FFF;
+      margin: 20px;
     }
     h1 {
       color: #000;
@@ -67,10 +71,14 @@
 <body>
   <h1>Exercise</h1>
   <section id="wrapper">
-    <div id="navy">Navy</div>
-    <div id="teal">Teal</div>
-    <div id="blue">Blue</div>
-    <div id="aqua">Aqua</div>
+    <div class="row">
+      <div id="navy" class="column">Navy</div>
+      <div id="teal" class="column">Teal</div>
+    </div>
+    <div class="row">
+      <div id="blue" class="column">Blue</div>
+      <div id="aqua" class="column">Aqua</div>
+    </div>
     <div id="footer">Footer</div>
   </section>
 </body>
