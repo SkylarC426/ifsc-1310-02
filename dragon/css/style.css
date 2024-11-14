@@ -1,0 +1,228 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #26292e;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    clear: both; 
+    font-size: 22px;
+}
+
+.img-right {
+    float: right;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.img-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.configurations {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 10px;
+}
+
+.configurations-img {
+    flex-shrink: 0;
+    width: 450px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+
+.configurations-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.configurations-text {
+    flex: 1;
+    max-width: 70%;
+    color: #FFF;
+}
+
+.dragon-container {
+    width: 85%; 
+    height: 85%; 
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+
+.dragon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.dInterior-container {
+    width: 85%; 
+    height: 85%; 
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+
+.dInterior-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.dLab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.dLab-img {
+    width: 100%; 
+    max-width: 1200px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+
+.dLab-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.dLab-text-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    width: 65%;
+}
+
+.dLab-column {
+    flex: 1;
+    padding: 10px;
+    color: #FFF;
+}
+
+.dLab-text-title {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.logo-right {
+    float: right;
+    margin-left: 20px; 
+    margin-top: 10px;
+    width: 600px; 
+    height: 350px;
+    border-radius: 10px;
+}
+
+.logo-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.text-right {
+    margin-top: 10px;
+    max-width: 78%;
+}
+
+.text-left {
+    margin-right: 400px; 
+}
+
+.no-bullets {
+    margin-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    float: left;
+    font-size: 26px;
+}
+
+.no-bullets li {
+    margin-bottom: 18px;
+}
+
+.infographic-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.infographic{
+    width: 750px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+
+.infographic img{
+    width: 750px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+
